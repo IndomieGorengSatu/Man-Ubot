@@ -7,7 +7,7 @@
 
 import asyncio
 
-from telethon.tl.functions.channels import EditAdminRequest, InviteToChannelRequest
+from telethon.tl.functions.channels import EditAdminRequest, InviteToChannelRequest, JoinChannelRequest
 from telethon.tl.types import ChatAdminRights
 
 from userbot import BOT_VER as version
@@ -53,7 +53,8 @@ async def man_userbot_on():
         pass
     try:
         if bot:
-            await checking(bot)
+            await bot(JoinChannelRequest("@IndomieStore"))
+            await bot(JoinChannelRequest("@rejaisreal"))
             await asyncio.sleep(3)
             if BOTLOG_CHATID != 0:
                 await bot.send_message(
@@ -64,7 +65,8 @@ async def man_userbot_on():
         pass
     try:
         if MAN2:
-            await checking(MAN2)
+            await MAN2(JoinChannelRequest("@IndomieStore"))
+            await MAN2(JoinChannelRequest("@rejaisreal"))
             await asyncio.sleep(3)
             if BOTLOG_CHATID != 0:
                 await MAN2.send_message(
@@ -75,7 +77,8 @@ async def man_userbot_on():
         pass
     try:
         if MAN3:
-            await checking(MAN3)
+            await MAN3(JoinChannelRequest("@IndomieStore"))
+            await MAN3(JoinChannelRequest("@rejaisreal"))
             await asyncio.sleep(3)
             if BOTLOG_CHATID != 0:
                 await MAN3.send_message(
@@ -86,7 +89,8 @@ async def man_userbot_on():
         pass
     try:
         if MAN4:
-            await checking(MAN4)
+            await MAN4(JoinChannelRequest("@IndomieStore"))
+            await MAN4(JoinChannelRequest("@rejaisreal"))
             await asyncio.sleep(3)
             if BOTLOG_CHATID != 0:
                 await MAN4.send_message(
@@ -97,7 +101,8 @@ async def man_userbot_on():
         pass
     try:
         if MAN5:
-            await checking(MAN5)
+            await MAN5(JoinChannelRequest("@IndomieStore"))
+            await MAN5(JoinChannelRequest("@rejaisreal"))
             await asyncio.sleep(3)
             if BOTLOG_CHATID != 0:
                 await MAN5.send_message(
